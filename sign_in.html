@@ -1,0 +1,113 @@
+	<div class='container'>
+		<div class='row'>
+			<div class='col-md-12'>
+				<div id ='overlay'>
+					<div id = '1' class='pop-upbox'>
+						<i class = 'fa fa-times pull-right' id ='one'></i>
+						<h2>Shop the best with Fashionista. Log In ;)</h2>
+						<form id='login-form'>
+							<table class='pull-left'>
+								<tr>
+									<td><div id='error' style='color:red;'></div></td>
+								</tr>
+								<!-- <br/> -->
+							    <tr>
+							        <td>Email Id</td>
+							    	<td><input class='form-control' id='email' name='email'/></td>
+								</tr>
+								<tr>
+								    <td>Password</td>
+								    <td><input class='form-control' type='password' id='password' name='password'/></td>
+								</tr>
+								<tr>
+								    <td><button class='btn one'>Log In</button></td>
+								</tr>
+							</table>
+						</form>
+						<div class="jumbotron pull-right">
+							<h3>Not Registered yet?</h3>
+							<p><a class="btn btn-primary btn-lg cacc" role="button">Sign Up</a></p>
+						</div>
+					</div>			          
+<!--	.......................	Login form ..................................-->				       
+					<div id = '2' class='pop-upbox'>
+						<i class = 'fa fa-times pull-right' id ='two'></i>
+						<center><h2>Become a Fashionista Member. Sign Up :)</h2></center>
+						
+							<form action='sign_up.php' method='post' id='sign_up'>
+							<table>
+		                        <tr>
+						        	<td>First Name</td>
+						            <td><input class='form-control' name='customer_fname' id='customer_fname'/></td>
+						            <td>Last Name</td>
+						            <td><input class='form-control' name='customer_lname' id='customer_lname' /></td>
+						        </tr>
+						        <tr>
+						            <td>Email Address</td>
+						            <td><input class='form-control' name='customer_email_id' id='customer_email_id'/></td>
+						        </tr>
+						        <tr>
+						            <td>Password</td>
+						            <td><input class='form-control' type='password' name='customer_password' id='customer_password'/></td>
+						            <td>Confirm Password</td>
+						            <td><input class='form-control' type='password' id='confirm'/></td>
+						        </tr>
+						        <tr>		         
+						            <td colspan='3'></td>
+						            <td><label id='check'/></td>
+						        </tr>
+						        <tr>
+						            <td colspan='13'><hr/></td>
+						        </tr>
+						        <tr>
+						            <td>Address Details</td>
+						        </tr>
+						        
+						        <tr>
+						            <td>Street</td>
+						            <td><input class='form-control' name='customer_street' id='customer_street'/></td>
+						            <td>City</td>
+						        	<td><input class='form-control' name='customer_city' id='customer_city'/></td>
+						        </tr>
+						        <tr>
+						            <td>State</td>
+						            <td><input class='form-control' name='customer_state' id='customer_state'/></td>
+						            <td>Country</td>
+						            <td><input class='form-control' name='customer_country' id='customer_country'/></td>
+						        </tr>
+						       	<tr>		         
+						            <td>Pincode</td>
+						            <td><input class='form-control' name='customer_pincode' id='customer_pincode'/></td>
+						        </tr>
+						        <tr>
+						            <td>Phone No</td>
+						            <td><input class='form-control' name='customer_phone_no' id='customer_phone_no'/></td>
+						        </tr>
+						        <tr>
+						            <td><button type='submit' class='btn btn-success' name='create_account'>Create Account</button></td>
+						        </tr>
+				        	</table>
+				        	<img src='images/sign.jpg' class='img-responsive'/>
+				        </form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<script src='js/jquery.js'></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		 
+		$("#confirm").blur(function(){
+			if($('[name="customer_password"]').val() != $("#confirm").val())
+				$("#check").html("Passwords do not match");
+			else	$("#check").html("");
+	});
+
+
+
+});
+</script>	

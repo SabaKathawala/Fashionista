@@ -1,0 +1,320 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fonts/FontAwesome.otf");
+	
+  }
+
+
+  @font-face{
+	font-family: 'Oregon LDO Vanishing Bold Oblique_0';
+	src: url('../fonts/fonts/Oregon LDO Vanishing Bold Oblique_0.ttf');
+}
+
+
+@font-face{
+	src: url("../fonts/fonts/Billy Argel Font.ttf");
+	font-family:'Billy Argel Font';
+}
+
+/*body{
+background: url("../images/shoes/background.jpg")
+
+}*/
+.container-fluid{
+	padding: 0;
+}
+
+.container-fluid .row {
+ 	margin: 0;
+}
+
+
+header{
+	position: fixed;
+	top:0;
+	left:0;
+	background: url('../images/fashionista_header_bg.jpg') ;
+	width:100%;
+	height:160px;
+	z-index: 100;
+}
+
+
+
+.header-ul{
+	margin-top: 8px;
+	list-style-type: none;
+	word-spacing: 8px;
+}
+
+.header-ul li{
+	display: inline-block;
+	padding-left: 15px;
+}
+
+.header-ul li a{
+	padding-left: 2px;
+	padding-right: 2px;
+	color:#836953;
+	font-size: 16px;
+	font-family:'Oregon LDO';
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.header-ul li a:hover{
+	text-decoration: none;
+	background-color: #321414;
+}
+
+.logo{
+	margin-top: -25px;
+	text-align: center;
+}
+.logo a{
+	font-size: 80px;
+	letter-spacing: 3px;
+	color:rgb(252, 136, 136);
+	font-family: 'Billy Argel Font';
+}
+
+.logo a:hover{
+	text-decoration: none;
+	color:rgb(253, 106, 106);
+
+}
+.caption{
+	font-family: 'Oregon LDO Vanishing Bold Oblique_0';
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	word-spacing: 5px;
+	text-transform: lowercase;
+	margin-top: -40px;
+	color: rgb(146, 45, 101);
+}
+
+.options{
+	margin-top: -15px;
+	list-style-type: none;
+	text-align: center;
+	word-spacing: 60px;
+}
+
+.options li{
+	display: inline-block;
+	padding-right:40px; 
+}
+
+.options li a{
+	color:#695C58;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Oregon LDO Light Oblique';
+}
+
+.options li a:hover{
+	text-decoration: none;
+	color:#543d37;
+	cursor: pointer;
+}
+/*.logo-content{
+	height:192px;
+	position: fixed;
+	width: 100%;
+	top:0;
+	z-index: 10;
+	background: url("../images/fashionista_header_bg.jpg");
+	text-align: center;
+}
+
+.short{
+	font-size: 95px;
+	margin-top: 40px;
+	letter-spacing: 3px;
+	color:rgb(252, 136, 136);
+	font-family: 'Billy Argel Font';
+}
+
+.short a:hover{
+	text-decoration: none;
+	color:rgb(253, 106, 106);
+}
+
+.logo-caption{
+	font-family: 'Oregon LDO Vanishing Bold Oblique_0';
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	word-spacing: 5px;
+	text-transform: capitalize;
+	color: rgb(146, 45, 101);
+}
+
+header {
+position: fixed;
+width: 200px;
+height: 100%;
+display: block;
+/*top:150px;*/
+/*background-color: black;*/
+/*z-index: 1;
+text-align: center;
+text-transform: uppercase;
+border-left:dotted 5px #222;
+border-right:dotted 5px #222;
+}
+i{
+	margin-right: 10px;
+}
+.menu{
+	text-align: left;
+	margin-bottom: 70px;
+}
+.menu>li{
+	background-color: rgb(253,106,106);		//#8e1720 	#ea4a5a	#ff004f		#8650ac	#b85c2e	#4f334e
+	border-bottom:#eaeaea;
+	padding-top: 5px;
+	padding-bottom: 5px;
+*/	/*box-shadow: 0 0 10px 4px black; 
+
+}*/
+
+.quote{
+	text-align: center;
+	font-family: 'Oregon LDO Light Oblique';
+	text-transform: capitalize;
+	word-spacing: 10px;
+	color:rgb(204, 101, 87);
+}
+
+.quote i{
+	
+	font-size: 20px;
+	color:#695C58;
+}
+
+.quote input{
+	width:200px;
+	text-align: center;
+	color:black;
+	border-color: black;
+	border-radius: 10px;
+	height:30px;
+	font-size: 18px;
+}
+
+::-webkit-input-placeholder {
+   color: rgb(204, 101, 87);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: rgb(204, 101, 87);  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgb(204, 101, 87);  
+}
+
+:-ms-input-placeholder {  
+   color: rgb(204, 101, 87);  
+}
+
+.nav-black{
+	position: fixed;
+	border-right: solid 2px rgb(146, 45, 101);
+	top:160px;
+	width: 255px;
+	height: 100%;
+}
+
+.nav-black ul{
+	display:none;
+	list-style-type: none;
+
+}
+
+.nav-black ul li{
+	padding-top:50px;
+	border-bottom: solid 2px rgb(146, 45, 101);
+}
+
+
+.nav-black .active{
+	display: block;
+}
+
+.mymenu i{
+	font-size: 18px;
+	color:rgb(146, 45, 101);
+	margin-right: 20px;
+}
+.mymenu:hover i{
+	color:rgb(146, 45, 101);
+}
+.mymenu span{
+	font-family: 'Oregon LDO';
+	color:rgb(146, 45, 101);
+	letter-spacing: 2px;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.mymenu a:hover {
+	text-decoration:none;
+	cursor: pointer;
+}
+
+.admin{
+	font-family: 'FontAwesome';
+	color:rgb(146, 45, 101);
+	font-size: 20px;
+	text-align: center;
+}
+
+.edit_blocks{
+	border-top:solid 2px rgb(146, 45, 101);
+	margin-left:255px;
+	margin-top:200px;
+	margin-bottom: 20px;
+	border-bottom:solid 2px rgb(146, 45, 101);
+}
+.edit_blocks>div{
+	display:none;
+	/*height: auto;*/
+}
+
+.edit_blocks table td{
+	padding:20px;
+	font-family: 'Oregon LDO';
+	color:#222;
+	text-transform: capitalize;
+}
+.edit_blocks .active{
+	display: block;
+}
+
+.edit_blocks>div>div{
+	display: none;
+}
+.form-control{
+	width:585px;
+	border: 1px solid #A79F9F;
+}
+
+input[type="file"]
+{
+	color:#222;
+	font-family: 'FontAwesome';
+}
+.btn{
+	background: transparent;
+	color:#222;
+	border-color: #A79F9F;
+}
+
+option{
+	/*105 27*/
+	width:200px;
+	height:30px;
+}
